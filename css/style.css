@@ -9,7 +9,12 @@ body {
 }
 
 .app {
-    flex-grow: 1;
+    margin: 0 auto;
+
+}
+
+.container {
+    margin: 0 10px;
 }
 
 nav ul {
@@ -54,7 +59,7 @@ main {
     justify-content: center;
     align-items: center;
     color: white;
-    background: url("ugly2Photo.jpg") no-repeat center;
+    background: url("../images/ugly2Photo.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
     font-family: 'Pacifico', cursive;
@@ -65,7 +70,7 @@ main {
 main p:last-child {
     font-size: 2em;
     text-align: center;
-    margin: 0;
+    margin: 0 10px;
     letter-spacing: 0.3em;
 }
 
@@ -77,10 +82,21 @@ main p:last-child {
 }
 
 footer {
-    border: 3px solid SteelBlue;
-    background-color: PowderBlue;
-    padding: 10px;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+
+}
+
+.socialMedia {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
 }
 
 @media (min-width: 768px) {
