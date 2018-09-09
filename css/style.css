@@ -17,21 +17,6 @@ body {
     margin: 0 10px;
 }
 
-nav ul {
-    display: none;
-    position: fixed;
-    top: 40px;
-    list-style: none;
-    left: -30px;
-}
-
-nav ul li {
-    color: white;
-    background-color: rgba(222, 222, 222, 0.8);
-    font-size: 1.7em;
-    padding: 2px;
-}
-
 .hamburgerMenu {
     display: flex;
     flex-direction: column;
@@ -51,6 +36,21 @@ nav ul li {
     width: 20px;
     height: 2px;
     background-color: white;
+}
+
+nav ul {
+    display: none;
+    position: fixed;
+    top: 40px;
+    list-style: none;
+    left: -30px;
+}
+
+nav ul li {
+    color: white;
+    background-color: rgba(222, 222, 222, 0.8);
+    font-size: 1.7em;
+    padding: 2px;
 }
 
 main {
@@ -106,26 +106,21 @@ footer {
     }
 
     nav {
-        display: flex;
+        position: absolute;
         flex-direction: row;
-        flex-grow: 3;
     }
 
     nav ul {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        position: relative;
     }
 
     main {
-        flex-grow: 6;
     }
 
     #aboutMe {
-        flex-grow: 3;
     }
 
     footer {
-        flex-grow: 3;
     }
 }
