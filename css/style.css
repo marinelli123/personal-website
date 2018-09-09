@@ -6,12 +6,10 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: #EAFEBA;
 }
 
 .app {
     flex-grow: 1;
-    padding: 0 10px;
 }
 
 nav ul {
