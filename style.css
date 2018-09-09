@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #EAFEBA;
+}
+
+.app {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+nav ul {
+    display: none;
+    position: fixed;
+    top: 40px;
+    list-style: none;
+    left: -30px;
+}
+
+nav ul li {
+    color: white;
+    background-color: rgba(222, 222, 222, 0.8);
+    font-size: 1.7em;
+    padding: 2px;
+}
+
+.hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    position: fixed;
+    background-color: rgba(222, 222, 222, 0.8);
+    width: 40px;
+    height: 30px;
+    left: 10px;
+    top: 10px;
+    padding: 3px 0;
+}
+
+.hamburgerMenu span {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("ugly2Photo.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+main p:last-child {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.3em;
+}
+
+#aboutMe {
+    border: 3px solid Gold;
+    background-color: LemonChiffon;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    border: 3px solid SteelBlue;
+    background-color: PowderBlue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 3;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        flex-grow: 6;
+    }
+
+    #aboutMe {
+        flex-grow: 3;
+    }
+
+    footer {
+        flex-grow: 3;
+    }
+}
